@@ -22,8 +22,7 @@ body header a {
   text-decoration: none;
   padding: 0.9375rem;
   display: block;
-  -webkit-text-decoration: uppercase;
-          text-decoration: uppercase;
+  text-transform: uppercase;
 }
 
 main section#card {
@@ -52,14 +51,43 @@ main section#card ul li span.card-avatar {
   height: 1.875rem;
   background-color: #ccdfff;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 main section#card ul li span.card-dialog {
   font-weight: bold;
   display: inline-block;
-  margin-left: 40px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-left: 2.5rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+
+main section#primary {
+  color: #fff;
+  padding: 0.9375rem;
+  text-align: center;
+}
+
+main section#primary h1 {
+  font-size: 3rem;
+  margin-top: 0.625rem;
+  text-transform: uppercase;
+}
+
+main section#primary p {
+  font-size: 1.4rem;
+}
+
+main section#primary a {
+  color: #001333;
+  background-color: #FFF6BB;
+  padding: 0.9375rem;
+  border-radius: 0.9375rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 3.125rem auto 0;
 }
 /*# sourceMappingURL=main.css.map */

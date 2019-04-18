@@ -1,6 +1,7 @@
 $colors: (
     primary: #005DFF,
     primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%),
     accent:#FFF6BB,
 );
 
@@ -33,7 +34,7 @@ body{
         text-decoration:none;
         padding:$padding;
         display:block;
-        text-decoration:uppercase;
+        text-transform:uppercase;
     }
 }
 
@@ -60,17 +61,46 @@ main{
                     height:1.875rem;
                     background-color:color(primary-light);
                     border-radius:50%;
-                    margin-right:10px;
+                    margin-right:0.625rem;
                 }
 
                 span.card-dialog{
                     font-weight:bold;
                     display:inline-block;
-                    margin-left:max(40px);
-                    margin-top:5px;
-                    margin-bottom:5px;
+                    margin-left:max(2.5rem);
+                    margin-top:0.3125rem;
+                    margin-bottom:0.3125rem;
                 }
             }
+        }
+    }
+
+    section#primary{
+        color:#fff;
+        padding:$padding;
+        text-align:center;
+
+        h1{
+            font-size:3rem;
+            margin-top:0.625rem;
+            text-transform:uppercase;
+        }
+
+        p{
+            font-size:1.4rem;
+        }
+
+        a{
+            color:color(primary-dark);
+            background-color:color(accent);
+            padding:$padding;
+            border-radius:$borders;
+            text-decoration:none;
+            text-transform:uppercase;
+            font-weight:bold;
+            display:block;
+            text-align:center;
+            margin: 3.125rem auto 0;
         }
     }
 }
