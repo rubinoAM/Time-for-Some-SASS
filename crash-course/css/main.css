@@ -16,4 +16,50 @@ body #bg {
   position: absolute;
   z-index: -1;
 }
+
+body header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.9375rem;
+  display: block;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+
+main section#card {
+  background-color: #fff;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  border-radius: 0.9375rem;
+  -webkit-box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+main section#card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main section#card ul li {
+  margin-bottom: 0.625rem;
+}
+
+main section#card ul li span.card-avatar {
+  position: absolute;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #ccdfff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+main section#card ul li span.card-dialog {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 /*# sourceMappingURL=main.css.map */
