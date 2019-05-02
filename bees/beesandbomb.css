@@ -90,5 +90,29 @@ div {
   content: '';
   position: absolute;
   border-radius: 50%;
+  -webkit-animation: play 2s linear infinite;
+          animation: play 2s linear infinite;
+}
+
+@-webkit-keyframes play {
+  0% {
+    -webkit-transform: rotateY(0deg) translate(60px) rotateY(0deg);
+            transform: rotateY(0deg) translate(60px) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) translate(60px) rotateY(-360deg);
+            transform: rotateY(360deg) translate(60px) rotateY(-360deg);
+  }
+}
+
+@keyframes play {
+  0% {
+    -webkit-transform: rotateY(0deg) translate(60px) rotateY(0deg);
+            transform: rotateY(0deg) translate(60px) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) translate(60px) rotateY(-360deg);
+            transform: rotateY(360deg) translate(60px) rotateY(-360deg);
+  }
 }
 /*# sourceMappingURL=beesandbomb.css.map */
