@@ -25,3 +25,16 @@ div{
     height:$d-ring;
     border:$rt solid $cc;
 }
+
+.dot{
+    @for $i from 1 to $n-dots + 1{
+        &:nth-child(#{$i}){
+            transform:rotate($i * $ba) translate($d-ring * 0.5);
+        }
+    }
+
+    width:$d-dots;
+    height:$d-dots;
+    background-color:$cc;
+    margin:-0.5 * $d-dots;
+}
