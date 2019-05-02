@@ -1,0 +1,27 @@
+$bg:#222;
+$cc:#fff;
+
+$n-dots:12;
+$d-dots:30px;
+$d-ring:300px;
+$rt:15px;
+
+$ba:360deg/$n-dots;
+
+body{
+    background-color:$bg;
+}
+
+div{
+    border-radius:50%;
+    position:absolute;
+}
+
+#ring{
+    left:50%;
+    top:50%;
+    margin:-0.6 * $d-ring;
+    width:$d-ring;
+    height:$d-ring;
+    border:$rt solid $cc;
+}
