@@ -1,4 +1,4 @@
-$bg:#222;
+$bg:#2c1ac7;
 $cc:#fff;
 
 $n-dots:12;
@@ -7,15 +7,17 @@ $d-ring:300px;
 $rt:15px;
 
 $ba:360deg/$n-dots;
+$bs:0 0 0 0.6*$rt $bg;
 $trans-dist:2*$d-dots;
 
 body{
     background-color:$bg;
 }
 
-div{
+div,:after{
     border-radius:50%;
     position:absolute;
+    transform-style:preserve-3d;
 }
 
 #ring{
@@ -27,9 +29,8 @@ div{
         width:$d-ring;
         height:$d-ring;
         border:$rt solid $cc;
+        box-shadow:$bs;
         content:'';
-        border-radius:50%;
-        position:absolute;
     }
 }
 
@@ -37,6 +38,9 @@ div{
     @for $i from 1 to $n-dots + 1{
         &:nth-child(#{$i}){
             transform:rotate($i * $ba) translate($d-ring * 0.5);
+            &:after{
+                animation-delay:(-$i*2s)/$n-dots;
+            }
         }
     }
 
@@ -44,10 +48,9 @@ div{
         width:$d-dots;
         height:$d-dots;
         background-color:$cc;
+        border:8px $bg solid;
         margin:-0.5 * $d-dots;
         content:'';
-        position:absolute;
-        border-radius:50%;
         animation:play 2s linear infinite;
     }
 }

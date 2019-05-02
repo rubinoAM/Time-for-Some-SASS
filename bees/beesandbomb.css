@@ -1,10 +1,12 @@
 body {
-  background-color: #222;
+  background-color: #2c1ac7;
 }
 
-div {
+div, :after {
   border-radius: 50%;
   position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 #ring {
@@ -17,9 +19,9 @@ div {
   width: 300px;
   height: 300px;
   border: 15px solid #fff;
+  -webkit-box-shadow: 0 0 0 9px #2c1ac7;
+          box-shadow: 0 0 0 9px #2c1ac7;
   content: '';
-  border-radius: 50%;
-  position: absolute;
 }
 
 .dot:nth-child(1) {
@@ -27,9 +29,19 @@ div {
           transform: rotate(30deg) translate(150px);
 }
 
+.dot:nth-child(1):after {
+  -webkit-animation-delay: -0.16667s;
+          animation-delay: -0.16667s;
+}
+
 .dot:nth-child(2) {
   -webkit-transform: rotate(60deg) translate(150px);
           transform: rotate(60deg) translate(150px);
+}
+
+.dot:nth-child(2):after {
+  -webkit-animation-delay: -0.33333s;
+          animation-delay: -0.33333s;
 }
 
 .dot:nth-child(3) {
@@ -37,9 +49,19 @@ div {
           transform: rotate(90deg) translate(150px);
 }
 
+.dot:nth-child(3):after {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
 .dot:nth-child(4) {
   -webkit-transform: rotate(120deg) translate(150px);
           transform: rotate(120deg) translate(150px);
+}
+
+.dot:nth-child(4):after {
+  -webkit-animation-delay: -0.66667s;
+          animation-delay: -0.66667s;
 }
 
 .dot:nth-child(5) {
@@ -47,9 +69,19 @@ div {
           transform: rotate(150deg) translate(150px);
 }
 
+.dot:nth-child(5):after {
+  -webkit-animation-delay: -0.83333s;
+          animation-delay: -0.83333s;
+}
+
 .dot:nth-child(6) {
   -webkit-transform: rotate(180deg) translate(150px);
           transform: rotate(180deg) translate(150px);
+}
+
+.dot:nth-child(6):after {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
 .dot:nth-child(7) {
@@ -57,9 +89,19 @@ div {
           transform: rotate(210deg) translate(150px);
 }
 
+.dot:nth-child(7):after {
+  -webkit-animation-delay: -1.16667s;
+          animation-delay: -1.16667s;
+}
+
 .dot:nth-child(8) {
   -webkit-transform: rotate(240deg) translate(150px);
           transform: rotate(240deg) translate(150px);
+}
+
+.dot:nth-child(8):after {
+  -webkit-animation-delay: -1.33333s;
+          animation-delay: -1.33333s;
 }
 
 .dot:nth-child(9) {
@@ -67,9 +109,19 @@ div {
           transform: rotate(270deg) translate(150px);
 }
 
+.dot:nth-child(9):after {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+
 .dot:nth-child(10) {
   -webkit-transform: rotate(300deg) translate(150px);
           transform: rotate(300deg) translate(150px);
+}
+
+.dot:nth-child(10):after {
+  -webkit-animation-delay: -1.66667s;
+          animation-delay: -1.66667s;
 }
 
 .dot:nth-child(11) {
@@ -77,19 +129,28 @@ div {
           transform: rotate(330deg) translate(150px);
 }
 
+.dot:nth-child(11):after {
+  -webkit-animation-delay: -1.83333s;
+          animation-delay: -1.83333s;
+}
+
 .dot:nth-child(12) {
   -webkit-transform: rotate(360deg) translate(150px);
           transform: rotate(360deg) translate(150px);
+}
+
+.dot:nth-child(12):after {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
 }
 
 .dot:after {
   width: 30px;
   height: 30px;
   background-color: #fff;
+  border: 8px #2c1ac7 solid;
   margin: -15px;
   content: '';
-  position: absolute;
-  border-radius: 50%;
   -webkit-animation: play 2s linear infinite;
           animation: play 2s linear infinite;
 }
