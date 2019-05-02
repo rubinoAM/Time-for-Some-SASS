@@ -3,5 +3,3 @@ for(let i=0;i<12;i++){
     dot.setAttribute('class','dot');
     document.getElementById('ring').appendChild(dot);
 }
-
-console.dir(ring);

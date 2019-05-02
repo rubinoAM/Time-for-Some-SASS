@@ -10,17 +10,16 @@ div {
 #ring {
   left: 50%;
   top: 50%;
-  margin: -180px;
+}
+
+#ring:after {
+  margin: -150px;
   width: 300px;
   height: 300px;
   border: 15px solid #fff;
-}
-
-.dot {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  margin: -15px;
+  content: '';
+  border-radius: 50%;
+  position: absolute;
 }
 
 .dot:nth-child(1) {
@@ -81,5 +80,15 @@ div {
 .dot:nth-child(12) {
   -webkit-transform: rotate(360deg) translate(150px);
           transform: rotate(360deg) translate(150px);
+}
+
+.dot:after {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  margin: -15px;
+  content: '';
+  position: absolute;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=beesandbomb.css.map */
